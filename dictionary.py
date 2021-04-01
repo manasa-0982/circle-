@@ -1,5 +1,4 @@
 import operator
-def most_frequent():
     str=input("Please enter a string: ")
     d={}
     for i in str:
@@ -10,4 +9,3 @@ def most_frequent():
     sorted_d = dict(sorted(d.items(), key=operator.itemgetter(1),reverse=True))
     for i in sorted_d:
         print("{}:{num:02d}".format(i,num=sorted_d[i]))
-most_frequent()
